@@ -30,6 +30,8 @@ group :devel do
   gem 'yard-contracts'
 end
 
+gem 'nanoc-rust', path: '../nanoc-rust'
+
 group :plugins do
   gem 'adsf'
   gem 'asciidoctor'

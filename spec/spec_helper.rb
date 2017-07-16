@@ -10,6 +10,13 @@ require 'nanoc'
 require 'nanoc/cli'
 require 'nanoc/spec'
 
+begin
+  require 'nanoc-rust'
+  NanocRust.activate!
+  $stderr.puts 'NOTE: Running with nanoc-rust'
+rescue LoadError
+end
+
 require 'timecop'
 require 'rspec/its'
 require 'fuubar'

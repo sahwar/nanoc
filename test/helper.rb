@@ -24,6 +24,13 @@ end
 require 'nanoc'
 require 'nanoc/cli'
 
+begin
+  require 'nanoc-rust'
+  NanocRust.activate!
+  $stderr.puts 'NOTE: Running with nanoc-rust'
+rescue LoadError
+end
+
 Nanoc::CLI.setup
 
 module Nanoc::TestHelpers
