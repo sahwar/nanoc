@@ -46,7 +46,7 @@ group :plugins do
   gem 'kramdown'
   gem 'less', '~> 2.0', platforms: :ruby
   gem 'libv8', platforms: :ruby
-  gem 'listen'
+  gem 'listen', '~> 3.0'
   gem 'markaby'
   gem 'maruku'
   gem 'mime-types'
